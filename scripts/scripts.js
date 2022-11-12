@@ -7,9 +7,9 @@ output.style.visibility = "hidden";
 document.getElementById("kgInput").addEventListener("input", function(event){
     output.style.visibility = "visible";
     let kg = event.target.value;
-    document.getElementById("gmOutput").innerHTML = kg * 1000;
-    document.getElementById("lbOutput").innerHTML = kg * 2.2;
-    document.getElementById("ozOutput").innerHTML = kg * 35.27;
+    document.getElementById("gmOutput").innerHTML = (kg * 1000).toFixed(4);
+    document.getElementById("lbOutput").innerHTML = (kg * 2.2).toFixed(4);
+    document.getElementById("ozOutput").innerHTML = (kg * 35.27).toFixed(4);
 
 })
    
